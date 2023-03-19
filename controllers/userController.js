@@ -2,6 +2,7 @@ const User = require("../models/userModel");
 const bcrypt = require("bcrypt");
 
 module.exports.login = async (req, res, next) => {
+  console.log("HEREEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEE");
   try {
     const { username, password } = req.body;
     const user = await User.findOne({ username });
