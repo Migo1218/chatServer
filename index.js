@@ -16,10 +16,11 @@ mongoose
   .catch((err) => {
     console.log(err.message);
   });
+
 const app = express();
 const socket = require("socket.io");
 
-app.use(cors());
+// app.use(cors());
 app.use(express.json());
 
 app.use("/api/auth", userRoutes);
